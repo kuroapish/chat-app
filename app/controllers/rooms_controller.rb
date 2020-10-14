@@ -1,6 +1,6 @@
 class RoomsController < ApplicationController
-  def new
-    @room = Room.new
+
+  def index
   end
 
   def create
@@ -9,8 +9,8 @@ class RoomsController < ApplicationController
       redirect_to root_path
     else
       render :new
+    end
   end
-end
       
   private
 
